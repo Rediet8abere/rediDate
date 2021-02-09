@@ -5,4 +5,6 @@
  2. Month
  3. Day
  4. Date format
- 5. Timeline of date relative from now 
+ 5. Timeline of date relative from now
+ 
+### [NPM](https://www.npmjs.com/package/redidate)

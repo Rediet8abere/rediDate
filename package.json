@@ -1,10 +1,10 @@
 {
   "name": "redidate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "method for date",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "Redi",
@@ -12,5 +12,8 @@
   "repository": {
     "type": "git",
     "url": "Rediet8abere"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
   }
 }
