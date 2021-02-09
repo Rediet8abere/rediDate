@@ -2,8 +2,6 @@
 const D = require('./index')
 const date = new D()
 
-
-
 test('Testing rediDate', () => {
   expect(date.year()).toBe(2021)
   expect(date.yr()).toBe('21')
@@ -14,4 +12,6 @@ test('Testing rediDate', () => {
   expect(date.format('y/m/d')).toBe(`${date.yr()}/${date.month()}/${date.day().toString().slice(0, 3)}`)
   expect(date.format('h:i:s')).toBe(`${date.date.getHours()}:${date.mins()}:${date.secs()}`)
   expect(date.format('Y-M-D h:I:S')).toBe(`${date.year()}-${date.month()}-${date.day()}  ${date.date.getHours()}:${date.mins()}:${date.secs()}`)
+  expect(new D(2019, 0, 2, 3, 4, 5).when()).toBe('2 years from now')
+  expect(new D(2019, 9, 2, 3, 4, 5).when()).toBe('less than 1 year from now')
 })
